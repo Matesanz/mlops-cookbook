@@ -1,0 +1,67 @@
+fail_fast: true
+default_stages: [commit]
+repos:
+  - repo: local
+    hooks:
+
+      - id: commitizen
+        name: Commitizen
+        entry: cz check
+        args:
+          [
+          --allow-abort, 
+          --commit-msg-file
+          ]
+        stages: [commit-msg]
+        language: system
+
+      - id: black
+        name: Black
+        entry: black
+        types: [python]
+        language: system
+
+      - id: autoflake
+        name: Autoflake
+        entry: autoflake
+        types: [python]
+        language: system
+
+      - id: system
+        name: Isort
+        entry: isort
+        types: [python]
+        language: system
+
+      - id: pylint
+        name: Pylint
+        entry: pylint
+        args:
+          [
+            "--rcfile=pyproject.toml", # Link to your config file
+          ]
+        types: [python]
+        language: system
+
+
+      - id: flake8
+        name: Flake8
+        entry: flake8
+        args:
+          [
+            "--ignore=E501"  # ignore max length
+          ]
+        language: system
+        types: [python]
+
+      - id: pydocstyle
+        name: pydocstyle
+        entry: pydocstyle
+        types: [python]
+        language: system
+
+      - id: bandit
+        name: bandit
+        entry: bandit
+        types: [python]
+        language: system

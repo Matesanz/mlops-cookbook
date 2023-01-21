@@ -1,0 +1,31 @@
+# launch mlflow server
+version: '3'
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        - PYTHON_VERSION=3.9
+        - POETRY=1.2.2
+    tty: true
+
+    environment:
+      - MLFLOW_URI=http://mlflow:5000
+
+
+    volumes:
+      # Mounts the project folder to '/workspace'.
+      - ..:/workspace:cached
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.1.1
+    ports:
+      - 5000:5000
+    volumes:
+      - ../mlruns:/mlruns
+    
+    command: mlflow server --host 0.0.0.0
+    
+

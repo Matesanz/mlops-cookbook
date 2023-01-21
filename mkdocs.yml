@@ -1,0 +1,32 @@
+site_name: '👋 mlops-course'
+theme:
+  name: material
+  theme:
+  palette:
+    primary: pink
+  features:
+    - content.code.annotate
+
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            separate_signature: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+watch:
+  - 'mlops_course'
+  - docs

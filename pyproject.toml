@@ -9,6 +9,7 @@ packages = [{include = "mlops_course"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 mlflow-skinny = "^2.1.1"
+pydantic = "^1.10.4"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^5.0.4"

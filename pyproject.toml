@@ -72,6 +72,11 @@ add-ignore = ["D200", "D212"]
         "pylint.extensions.comparison_placement",
     ]
 
+    [tool.pylint.messages_control]
+    disable = [
+        "too-few-public-methods",
+        "too-many-arguments",
+    ]
 
 [tool.bandit]
 exclude_dirs = ["tests"]

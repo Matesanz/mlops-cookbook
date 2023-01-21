@@ -9,6 +9,7 @@ packages = [{include = "mlops_course"}]
 [tool.poetry.dependencies]
 python = "^3.9"
 mlflow-skinny = "^2.1.1"
+pydantic = "^1.10.4"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^5.0.4"
@@ -71,6 +72,11 @@ add-ignore = ["D200", "D212"]
         "pylint.extensions.comparison_placement",
     ]
 
+    [tool.pylint.messages_control]
+    disable = [
+        "too-few-public-methods",
+        "too-many-arguments",
+    ]
 
 [tool.bandit]
 exclude_dirs = ["tests"]

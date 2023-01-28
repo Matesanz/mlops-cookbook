@@ -30,6 +30,9 @@ version_variable = "mlops_course/__init__.py:__version__"
 version_toml = "pyproject.toml:tool.poetry.version"
 commit_subject = "🔖 v{version}"
 commit_parser = "semantic_release.history.emoji_parser"
+major_emoji = "💥"  # breaking change
+minor_emoji = "✨,🚑,🎉"  # feature, hotfix, begin
+patch_emoji = "🐛,🩹,🔒"  # bugfix, simple fix, security
 
 [tool.black]
 line_length = 100

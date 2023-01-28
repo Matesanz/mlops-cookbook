@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mlops-course"
-version = "0.1.0"
+version = "0.0.0"
 description = "Code for the MLOps Course: learning how to build, train, and deploy data models."
 authors = ["Andrés Matesanz <Matesanz.Cuadrado@gmail.com>"]
 readme = "README.md"
@@ -12,25 +12,27 @@ mlflow-skinny = "^2.1.1"
 pydantic = "^1.10.4"
 
 [tool.poetry.group.dev.dependencies]
-flake8 = "^5.0.4"
 black = "^22.8.0"
 pre-commit = "^2.20.0"
-commitizen = "^2.32.2"
-bandit = "^1.7.4"
-autoflake = "^1.5.3"
 isort = "^5.10.1"
 pydocstyle = "^6.1.1"
+pycodestyle = "^2.10.0"
 mkdocs = "^1.3.1"
 mkdocstrings = "^0.19.0"
 mkdocstrings-python = "^0.7.1"
 mkdocs-material = "^8.4.2"
 pytest = "^7.1.3"
 jupyter = "^1.0.0"
+python-semantic-release = "^7.33.0"
 
-[tool.commitizen]
-name = "cz_conventional_commits"
-version = "0.1.0"
-tag_format = "$version"
+[tool.semantic_release]
+version_variable = "mlops_course/__init__.py:__version__"
+version_toml = "pyproject.toml:tool.poetry.version"
+commit_subject = "🔖 v{version}"
+commit_parser = "semantic_release.history.emoji_parser"
+major_emoji = "💥"  # breaking change
+minor_emoji = "✨,🚑,🎉"  # feature, hotfix, begin
+patch_emoji = "🐛,🩹,🔒"  # bugfix, simple fix, security
 
 [tool.black]
 line_length = 100
@@ -46,16 +48,12 @@ ensure_newline_before_comments = true
 line_length = 100
 extend_skip_glob = ["docs/*", "notebooks/*"]
 
-[tool.autoflake]
-check = true
-
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
 [tool.pydocstyle]
 convention = "google"
-add-ignore = ["D200", "D212"]
-
+add-select = ["D400", "D401", "D411"]
 
 [tool.pylint]
     [tool.pylint.main]
@@ -77,9 +75,6 @@ add-ignore = ["D200", "D212"]
         "too-few-public-methods",
         "too-many-arguments",
     ]
-
-[tool.bandit]
-exclude_dirs = ["tests"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

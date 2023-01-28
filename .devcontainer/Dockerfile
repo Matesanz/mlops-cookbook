@@ -8,6 +8,6 @@ ARG POETRY="1.2.2"
 RUN pip install poetry==${POETRY}
 
 # Install python dependencies using poetry
-COPY pyproject.toml /
+COPY pyproject.toml poetry.lock /
 RUN cd / && poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --no-root

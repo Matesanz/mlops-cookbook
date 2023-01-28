@@ -16,21 +16,18 @@
 			"settings": { 
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
 				"python.linting.enabled": true,
+				"python.poetryPath": "poetry",
+				"python.formatting.provider": "black",
 				"python.linting.pylintEnabled": true,
-				"python.linting.flake8Enabled": true,
-				"python.linting.flake8Args": ["--ignore=E501"],
 				"python.linting.pydocstyleEnabled": true,
-				"python.linting.banditEnabled": true,
-				"python.linting.banditArgs": ["-v -r . -c 'pyproject.toml'"],
-				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
-				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
-				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-				"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
-				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
-				"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
-				"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
-				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
-				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
+				"python.linting.pycodestyleEnabled": true,
+				"python.linting.pylintArgs": [
+					"--rcfile=${containerWorkspaceFolder}/pyproject.toml"
+				],
+				"python.formatting.blackPath": "/usr/local/bin/black",
+				"python.linting.pylintPath": "/usr/local/bin/pylint",
+				"python.linting.pydocstylePath": "/usr/local/bin/pydocstyle",
+				"python.linting.pycodestylePath": "/usr/local/bin/pycodestyle"
 			},
 			
 			// Add the IDs of extensions you want installed when the container is created.

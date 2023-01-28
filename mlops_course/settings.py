@@ -1,4 +1,5 @@
 """Settings for the MLOps course project."""
+
 from pydantic import BaseSettings
 
 

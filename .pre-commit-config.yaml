@@ -15,6 +15,12 @@ repos:
         types: [python]
         language: system
 
+      - id: pycodestyle
+        name: Pycodestyle
+        entry: pycodestyle
+        types: [python]
+        language: system
+
       - id: pylint
         name: Pylint
         entry: pylint

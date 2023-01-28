@@ -51,8 +51,7 @@ testpaths = ["tests"]
 
 [tool.pydocstyle]
 convention = "google"
-add-ignore = ["D200", "D212"]
-
+add-select = ["D400", "D401", "D411"]
 
 [tool.pylint]
     [tool.pylint.main]

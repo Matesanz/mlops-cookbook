@@ -46,9 +46,6 @@ ensure_newline_before_comments = true
 line_length = 100
 extend_skip_glob = ["docs/*", "notebooks/*"]
 
-[tool.autoflake]
-check = true
-
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
@@ -77,9 +74,6 @@ add-ignore = ["D200", "D212"]
         "too-few-public-methods",
         "too-many-arguments",
     ]
-
-[tool.bandit]
-exclude_dirs = ["tests"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

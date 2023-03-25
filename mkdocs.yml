@@ -1,9 +1,9 @@
-site_name: '👋 mlops-course'
+site_name: '🧪 MLOps Course'
 theme:
   name: material
   theme:
   palette:
-    primary: pink
+    primary: teal
   features:
     - content.code.annotate
 

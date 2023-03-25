@@ -15,6 +15,8 @@ plugins:
         python:
           options:
             separate_signature: true
+  - mkdocs-jupyter
+
 
 markdown_extensions:
   - admonition

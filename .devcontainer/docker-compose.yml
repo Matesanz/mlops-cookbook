@@ -12,7 +12,7 @@ services:
     tty: true
 
     environment:
-      - MLFLOW_URI=http://mlflow:5000
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
 
 
     volumes:

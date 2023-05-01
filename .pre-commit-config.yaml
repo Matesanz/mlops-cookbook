@@ -18,6 +18,10 @@ repos:
       - id: pycodestyle
         name: Pycodestyle
         entry: pycodestyle
+        args:
+          [
+            "--config=pyproject.toml",
+          ]
         types: [python]
         language: system
 
@@ -26,7 +30,7 @@ repos:
         entry: pylint
         args:
           [
-            "--rcfile=pyproject.toml", # Link to your config file
+            "--rcfile=pyproject.toml",
           ]
         types: [python]
         language: system

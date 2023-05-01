@@ -15,25 +15,29 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
-				"python.linting.enabled": true,
 				"python.poetryPath": "poetry",
 				"python.formatting.provider": "black",
+				"python.formatting.blackPath": "/usr/local/bin/black",
+				"python.linting.enabled": true,
 				"python.linting.pylintEnabled": true,
-				"python.linting.pydocstyleEnabled": true,
-				"python.linting.pycodestyleEnabled": true,
+				"python.linting.pylintPath": "/usr/local/bin/pylint",
 				"python.linting.pylintArgs": [
 					"--rcfile=${containerWorkspaceFolder}/pyproject.toml"
 				],
-				"python.formatting.blackPath": "/usr/local/bin/black",
-				"python.linting.pylintPath": "/usr/local/bin/pylint",
+				"python.linting.pydocstyleEnabled": true,
+				"python.linting.pycodestyleEnabled": true,
 				"python.linting.pydocstylePath": "/usr/local/bin/pydocstyle",
-				"python.linting.pycodestylePath": "/usr/local/bin/pycodestyle"
+				"python.linting.pycodestylePath": "/usr/local/bin/pycodestyle",
+				"python.linting.pycodestyleArgs": [
+					"--config=${containerWorkspaceFolder}/pyproject.toml"
+				]
 			},
 			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"dbaeumer.vscode-eslint",
 				"ms-python.python",
+				"ms-python.pylint",
 				"njpwerner.autodocstring",
 				"eamodio.gitlens",
 				"mhutchie.git-graph",
@@ -50,7 +54,8 @@
 				"perkovec.emoji",
 				"ms-toolsai.jupyter",
 				"bungcip.better-toml",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"ms-vscode.makefile-tools"
 			]
 
 		}
@@ -62,6 +67,7 @@
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {
-		"git": "os-provided"
+		"git": "os-provided",
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
 	}
 }

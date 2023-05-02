@@ -30,7 +30,8 @@
 				"python.linting.pycodestylePath": "/usr/local/bin/pycodestyle",
 				"python.linting.pycodestyleArgs": [
 					"--config=${containerWorkspaceFolder}/pyproject.toml"
-				]
+				],
+				"python.pythonPath": "/usr/local/bin/python",
 			},
 			
 			// Add the IDs of extensions you want installed when the container is created.
@@ -47,7 +48,6 @@
 				"yzhang.markdown-all-in-one",
 				"DavidAnson.vscode-markdownlint",
 				"christian-kohler.path-intellisense",
-				"ms-vsliveshare.vsliveshare",
 				"Vtrois.gitmoji-vscode",
 				"GitHub.vscode-pull-request-github",
 				"seatonjiang.gitmoji-vscode",
@@ -55,16 +55,19 @@
 				"ms-toolsai.jupyter",
 				"bungcip.better-toml",
 				"GitHub.copilot",
-				"ms-vscode.makefile-tools"
 			]
 
 		}
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "echo 'poetry config virtualenvs.create false' >> ~/.bashrc && pip3 install -e . && pre-commit install && mkdocs serve",
+	"postCreateCommand": "echo 'poetry config virtualenvs.create false' >> ~/.bashrc && pip3 install -e . && pre-commit install",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"forwardPorts": [
+		8000,
+		5000
+	],
 	"remoteUser": "vscode",
 	"features": {
 		"git": "os-provided",

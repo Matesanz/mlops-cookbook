@@ -13,8 +13,7 @@ pydantic = "^1.10.4"
 scikit-learn = "^1.2.1"
 pandas = "^1.5.3"
 seaborn = "^0.12.2"
-pymdown-extensions = "^9.10"
-sklearn-evaluation = "^0.12.0"
+fastapi = {extras = ["all"], version = "^0.95.1"}
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"
@@ -32,6 +31,7 @@ mkdocstrings = {extras = ["python"], version = "^0.20.0"}
 mkdocstrings-python = "^0.7.1"
 mkdocs-material = "^8.4.2"
 mkdocs-jupyter = "^0.22.0"
+pymdown-extensions = "^9.10"
 
 [tool.semantic_release]
 version_variable = "mlops_course/__init__.py:__version__"

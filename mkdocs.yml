@@ -1,4 +1,6 @@
 site_name: '🧪 MLOps Course'
+repo_url: https://github.com/Matesanz/mlops-course
+repo_name: Matesanz/mlops-course
 theme:
   name: material
   theme:

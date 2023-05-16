@@ -4,10 +4,10 @@ FROM mcr.microsoft.com/vscode/devcontainers/python:0-${PYTHON_VERSION}
 
 # Install Poetry
 # Install Poetry
-ARG POETRY="1.2.2"
+ARG POETRY="1.4.2"
 RUN pip install poetry==${POETRY}
 
 # Install python dependencies using poetry
-COPY pyproject.toml poetry.lock /
+COPY pyproject.toml /
 RUN cd / && poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --no-root

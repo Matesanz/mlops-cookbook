@@ -8,7 +8,7 @@ services:
       dockerfile: .devcontainer/Dockerfile
       args:
         - PYTHON_VERSION=3.9
-        - POETRY=1.2.2
+        - POETRY=1.4.2
     tty: true
 
     environment:

@@ -1,19 +1,20 @@
 [tool.poetry]
 name = "mlops-course"
-version = "0.4.0"
+version = "0.5.0"
 description = "Code for the MLOps Course: learning how to build, train, and deploy data models."
 authors = ["Andrés Matesanz <Matesanz.Cuadrado@gmail.com>"]
 readme = "README.md"
 packages = [{include = "mlops_course"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
 mlflow-skinny = "^2.1.1"
 pydantic = "^1.10.4"
 scikit-learn = "^1.2.1"
 pandas = "^1.5.3"
 seaborn = "^0.12.2"
 fastapi = {extras = ["all"], version = "^0.95.1"}
+streamlit = "^1.22.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"

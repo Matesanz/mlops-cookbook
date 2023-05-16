@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mlops-course"
-version = "0.4.0"
+version = "0.5.0"
 description = "Code for the MLOps Course: learning how to build, train, and deploy data models."
 authors = ["Andrés Matesanz <Matesanz.Cuadrado@gmail.com>"]
 readme = "README.md"

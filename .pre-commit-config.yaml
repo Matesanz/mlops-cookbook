@@ -15,16 +15,6 @@ repos:
         types: [python]
         language: system
 
-      - id: pycodestyle
-        name: Pycodestyle
-        entry: pycodestyle
-        args:
-          [
-            "--config=pyproject.toml",
-          ]
-        types: [python]
-        language: system
-
       - id: pylint
         name: Pylint
         entry: pylint

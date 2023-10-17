@@ -8,16 +8,23 @@ theme:
     primary: teal
   features:
     - content.code.annotate
+    - navigation.sections
+    - navigation.tabs
+    - navigation.prune
+    - navigation.indexes
+  custom_dir: "docs/overrides"
 
 plugins:
   - search
   - autorefs
+  - awesome-pages
   - mkdocstrings:
       handlers:
         python:
           options:
             separate_signature: true
-  - mkdocs-jupyter
+  - mkdocs-jupyter:
+      include_source: True
 
 
 markdown_extensions:
@@ -31,6 +38,23 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
 
+nav:
+    - Getting Started:
+      - index.md
+    - MLFlow Basics:
+      - basics/index.md
+      - basics/1-connect_to_mlflow.ipynb
+      - basics/2-creating_an_experiment.ipynb
+      - basics/3-creating_a_run.ipynb
+      - basics/4-logging_metrics.ipynb
+      - basics/5-logging_artifacts.ipynb
+      - basics/6-logging_models.ipynb
+      - basics/7-model_registry.ipynb
+      - basics/8-model_staging.ipynb
+    - Tutorials:
+      - tutorials/index.md
+      - tutorials/1-full_model_training.ipynb
+      - tutorials/2-full_model_evaluation.ipynb
+
 watch:
-  - 'mlops_course'
   - docs

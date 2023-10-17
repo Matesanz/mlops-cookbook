@@ -4,7 +4,6 @@ version = "0.5.0"
 description = "Code for the MLOps Course: learning how to build, train, and deploy data models."
 authors = ["Andrés Matesanz <Matesanz.Cuadrado@gmail.com>"]
 readme = "README.md"
-packages = [{include = "mlops_course"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
@@ -34,7 +33,6 @@ mkdocs-awesome-pages-plugin = "^2.9.2"
 mkdocs-section-index = "^0.3.8"
 
 [tool.semantic_release]
-version_variable = "mlops_course/__init__.py:__version__"
 version_toml = "pyproject.toml:tool.poetry.version"
 commit_subject = "🔖 v{version}"
 commit_parser = "semantic_release.history.emoji_parser"

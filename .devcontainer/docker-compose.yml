@@ -25,7 +25,6 @@ services:
       - 5000:5000
     volumes:
       - ../mlruns:/mlruns
+      - ../mlartifacts:/mlartifacts
     
-    command: mlflow server --host 0.0.0.0
-    
-
+    command: mlflow server --host 0.0.0.0 --backend-store-uri ./mlruns --artifacts-destination /mlartifacts --dev

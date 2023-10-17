@@ -15,11 +15,11 @@
 			// Set *default* container specific settings.json values on container create.
 			"settings": { 
 				"python.defaultInterpreterPath": "${containerEnv:PYENV_ROOT}/versions/${containerEnv:PYTHON_VERSION}/bin/python",
+				"jupyter.kernels.excludePythonEnvironments": ["/usr/local/bin/python", "/usr/bin/python"],
 				"pylint.path": ["${containerEnv:PYENV_ROOT}/shims/pylint"],
 				"python.poetryPath": "poetry"
 			},
 
-			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
 				"ms-python.python",

@@ -47,3 +47,14 @@ echo -e "${GREEN}✅  Python dependencies installed!${END}\n"
 echo -e "${GREEN}✅  Project correctly configured!${END}\n"
 echo -e "${BLUE}🔧  Installing pre-commit hooks and starting mkdocs..${END}\n"
 pre-commit install
+
+# create folders used by mlflow if they doesn't exist
+if [ ! -d "mlruns" ]; then
+    mkdir "mlruns"
+    chmod 777 "mlruns"
+fi
+
+if [ ! -d "mlartifacts" ]; then
+    mkdir "mlartifacts"
+    chmod 777 "mlartifacts"
+fi

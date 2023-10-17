@@ -8,11 +8,11 @@ packages = [{include = "mlops_course"}]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
-mlflow-skinny = "^2.7.1"
-pydantic = "^1.10.4"
-scikit-learn = "^1.2.1"
-pandas = "^1.5.3"
-seaborn = "^0.12.2"
+mlflow-skinny = "~2.7.1"
+pydantic = "~1.10.4"
+scikit-learn = "~1.2.1"
+pandas = "~1.5.3"
+seaborn = "~0.12.2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"
@@ -30,6 +30,8 @@ mkdocstrings-python = "^0.7.1"
 mkdocs-material = "^8.4.2"
 mkdocs-jupyter = "^0.22.0"
 pymdown-extensions = "^9.10"
+mkdocs-awesome-pages-plugin = "^2.9.2"
+mkdocs-section-index = "^0.3.8"
 
 [tool.semantic_release]
 version_variable = "mlops_course/__init__.py:__version__"

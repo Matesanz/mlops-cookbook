@@ -1,6 +1,7 @@
 site_name: '🧪 The MLOps Cookbook'
 repo_url: https://github.com/Matesanz/mlops-course
 repo_name: Matesanz/mlops-course
+site_url: https://matesanz.github.io/mlops-course/
 theme:
   name: material
   theme:

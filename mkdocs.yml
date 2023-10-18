@@ -18,6 +18,7 @@ plugins:
   - search
   - autorefs
   - awesome-pages
+  - glightbox
   - mkdocstrings:
       handlers:
         python:
@@ -41,6 +42,7 @@ markdown_extensions:
 nav:
     - Getting Started:
       - index.md
+      - setup.md
     - MLFlow Basics:
       - basics/index.md
       - basics/1-connect_to_mlflow.ipynb

@@ -12,7 +12,7 @@ ENV PYENV_ROOT="${HOME}/.pyenv"
 ENV PATH="${PYENV_ROOT}/shims:${PYENV_ROOT}/bin:${HOME}/.local/bin:$PATH"
 
 # Install pyenv and poetry
-ARG PYTHON_VERSION=3.11
+ARG PYTHON_VERSION=3.11.5
 ARG POETRY_VERSION=1.6.1
 RUN echo "done 0" \
     && curl https://pyenv.run | bash \

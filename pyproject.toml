@@ -12,6 +12,7 @@ pydantic = "~1.10.4"
 scikit-learn = "~1.2.1"
 pandas = "~1.5.3"
 seaborn = "~0.12.2"
+flask = "^2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"

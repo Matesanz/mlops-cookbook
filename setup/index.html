@@ -1,0 +1,1094 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Setting Up the Environment - 🧪 The MLOps Cookbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#009485">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#setting-up-the-environment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="🧪 The MLOps Cookbook" class="md-header__button md-logo" aria-label="🧪 The MLOps Cookbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🧪 The MLOps Cookbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Setting Up the Environment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Matesanz/mlops-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Matesanz/mlops-course
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../basics/" class="md-tabs__link">
+        MLFlow Basics
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced/model_serving/" class="md-tabs__link">
+        MLFLow Advanced
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tutorials/" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="🧪 The MLOps Cookbook" class="md-nav__button md-logo" aria-label="🧪 The MLOps Cookbook" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    🧪 The MLOps Cookbook
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Matesanz/mlops-course" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Matesanz/mlops-course
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="..">Getting Started</a>
+          
+            <label for="__nav_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Setting Up the Environment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Setting Up the Environment
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#local-environment" class="md-nav__link">
+    Local Environment
+  </a>
+  
+    <nav class="md-nav" aria-label="Local Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-clone-the-repository" class="md-nav__link">
+    1. Clone the repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-open-vscode" class="md-nav__link">
+    2. Open VSCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-launch-the-devcontainer" class="md-nav__link">
+    3. Launch the Devcontainer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-open-mlflow" class="md-nav__link">
+    4. Open MLFlow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-codespaces" class="md-nav__link">
+    Github Codespaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Github Codespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-copy-of-the-repository-fork" class="md-nav__link">
+    1. Create a copy of the repository (fork)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-launch-a-codespace-in-vscode" class="md-nav__link">
+    2. Launch a CodeSpace in VSCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-open-mlflow" class="md-nav__link">
+    3. Open MLFlow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../basics/">MLFlow Basics</a>
+          
+            <label for="__nav_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="MLFlow Basics" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          MLFlow Basics
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/1-connect_to_mlflow/" class="md-nav__link">
+        Connect to MLFlow Server
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/2-creating_an_experiment/" class="md-nav__link">
+        Create an Experiment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/3-creating_a_run/" class="md-nav__link">
+        Create a Run
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/4-logging_metrics/" class="md-nav__link">
+        Log Metrics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/5-logging_artifacts/" class="md-nav__link">
+        Log Artifacts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/6-logging_models/" class="md-nav__link">
+        Log Models
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/7-model_registry/" class="md-nav__link">
+        Model Registry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basics/8-model_staging/" class="md-nav__link">
+        Model Staging
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          MLFLow Advanced
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="MLFLow Advanced" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          MLFLow Advanced
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced/model_serving/" class="md-nav__link">
+        Model Deployment
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../tutorials/">Tutorials</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/1-full_model_training/" class="md-nav__link">
+        Full Model Training
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorials/2-full_model_evaluation/" class="md-nav__link">
+        Full Model Evaluation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#local-environment" class="md-nav__link">
+    Local Environment
+  </a>
+  
+    <nav class="md-nav" aria-label="Local Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-clone-the-repository" class="md-nav__link">
+    1. Clone the repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-open-vscode" class="md-nav__link">
+    2. Open VSCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-launch-the-devcontainer" class="md-nav__link">
+    3. Launch the Devcontainer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-open-mlflow" class="md-nav__link">
+    4. Open MLFlow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-codespaces" class="md-nav__link">
+    Github Codespaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Github Codespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-copy-of-the-repository-fork" class="md-nav__link">
+    1. Create a copy of the repository (fork)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-launch-a-codespace-in-vscode" class="md-nav__link">
+    2. Launch a CodeSpace in VSCode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-open-mlflow" class="md-nav__link">
+    3. Open MLFlow
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+
+
+
+                  
+
+  <a href="https://github.com/Matesanz/mlops-course/edit/master/docs/setup.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="setting-up-the-environment">Setting Up the Environment</h1>
+<div class="admonition success">
+<p class="admonition-title">Setup everything in a few minutes</p>
+<p>Thanks to the magic of <strong>Docker</strong> and <strong>VSCode</strong> we can launch a running environment really quick! 🎉</p>
+</div>
+<p>You can choose how to do it:</p>
+<ul>
+<li>👉 <a href="#local-environment">Setting the environment in my own computer</a></li>
+<li>👉 <a href="#github-codespaces">Setting the environment using Github Codespaces</a></li>
+</ul>
+<h2 id="local-environment">Local Environment</h2>
+<p>Thanks to the magic of the <strong><a href="https://medium.com/@matesanz.cuadrado/one-dev-environment-to-rule-them-all-devcontainers-90b50c78e9f6">DevContainers</a></strong> we can simply, clone the repo, open VSCode and launch a full ready environment <strong>clicking a single button</strong>. 😄</p>
+<div class="admonition warning">
+<p class="admonition-title">You need Docker Installed</p>
+<p>In order to use <strong>DevContainers you need to have Docker installed</strong> in your computer. If you don't have it, you can <strong>download it from <a href="https://docs.docker.com/get-docker/">here</a></strong>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Install the VSCode pluggin "Dev-Containers"</p>
+<p>In order to use DevContainers you need to have the VSCode pluggin <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers">Dev Containers</a>.</p>
+<p>You can do it <strong>manually</strong>:</p>
+<p><a class="glightbox" href="../assets/setup/setup_10.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_10" src="../assets/setup/setup_10.jpg" /></a></p>
+<p>Or by <strong>pressing</strong>:</p>
+<ol>
+<li>Press <code>Ctrl+P</code></li>
+<li>Paste <code>ext install ms-vscode-remote.remote-containers</code></li>
+<li>Press <code>Enter</code></li>
+</ol>
+</div>
+<h3 id="1-clone-the-repository">1. Clone the repository</h3>
+<div class="admonition note">
+<p class="admonition-title">Run this command</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span><span class="sb">`</span>https://github.com/&lt;your_user&gt;/mlops-course.git<span class="sb">`</span>
+</code></pre></div>
+</div>
+<h3 id="2-open-vscode">2. Open VSCode</h3>
+<p>Launch VSCode and open the folder of the repo.</p>
+<div class="admonition note">
+<p class="admonition-title">On linux or Mac: Run this command</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>mlops-course/
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>code<span class="w"> </span>.
+</code></pre></div>
+</div>
+<h3 id="3-launch-the-devcontainer">3. Launch the Devcontainer</h3>
+<p><strong>Click on the bottom-right blue button <code>Reopen in Container</code></strong> <em>(wait, first time takes some time to run)</em>.</p>
+<p><a class="glightbox" href="https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="devcontainer_gif" src="https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif" /></a></p>
+<h3 id="4-open-mlflow">4. Open MLFlow</h3>
+<p>A <strong>MLFlow</strong> server should <strong>start automatically</strong> (thanks to the magic of Docker Compose) <strong>at <a href="http://localhost:5000/">http://localhost:5000/</a></strong>. If it did not started automatically (or if you launched VSCode on the web), then follow this instructions:</p>
+<ul>
+<li>👉 <strong>Click on</strong>: <code>Ports</code></li>
+<li>👉 <strong>Check</strong> there is a port 5000 open (if not add a port 5000)</li>
+<li>👉 <strong>Click on</strong>: <code>🌐</code></li>
+</ul>
+<p><a class="glightbox" href="../assets/setup/setup_05.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_05" src="../assets/setup/setup_05.jpg" /></a></p>
+<div class="admonition success">
+<p class="admonition-title">Congrats!</p>
+<p><strong>🎉 You are ready to go! 🎉</strong></p>
+</div>
+<h2 id="github-codespaces">Github Codespaces</h2>
+<p>GitHub Codespaces is like having a <strong>ready-to-use computer</strong> for writing and testing code, but it's all <strong>online</strong>. Imagine if your coding tools, like your text editor and programming languages, were available on the internet. With GitHub Codespaces, you can write and <strong>run your code in a web browser without needing to install everything on your personal computer</strong>. It's handy for collaborating with others and quickly starting coding projects, kind of like having your coding workspace in the cloud.</p>
+<p><a class="glightbox" href="../assets/setup/setup_01.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_01" src="../assets/setup/setup_01.jpg" /></a></p>
+<div class="admonition info">
+<p class="admonition-title">You need a Github Account</p>
+<p>In order to access to GitHub Codespaces you need to log in into your account or register if you have no account. Github provides <strong>60 hours</strong> of computing at CodeSpaces <strong>for free!</strong> 🤑</p>
+</div>
+<h3 id="1-create-a-copy-of-the-repository-fork">1. Create a copy of the repository (fork)</h3>
+<ul>
+<li>👉 <strong>Go to</strong> the oficial repo at <a href="https://github.com/Matesanz/mlops-course">https://github.com/Matesanz/mlops-course</a></li>
+<li>👉 <strong>Click</strong> on <code>Fork &gt; Create a new Fork</code></li>
+</ul>
+<p><a class="glightbox" href="../assets/setup/setup_02.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_02" src="../assets/setup/setup_02.jpg" /></a></p>
+<h3 id="2-launch-a-codespace-in-vscode">2. Launch a CodeSpace in VSCode</h3>
+<ul>
+<li>👉 <strong>Go to</strong> your fork at <code>https://github.com/&lt;your_user&gt;/mlops-course</code></li>
+<li>👉 <strong>Click on</strong>: <code>&lt;&gt; Code</code> &gt; <code>Open in</code> &gt; <code>Open in Visual Studio Code</code></li>
+</ul>
+<p><a class="glightbox" href="../assets/setup/setup_07.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_07" src="../assets/setup/setup_07.jpg" /></a></p>
+<details class="warning">
+<summary>Accept all the pop-ups that appear</summary>
+<p><a class="glightbox" href="../assets/setup/setup_08.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_08" src="../assets/setup/setup_08.jpg" /></a>
+<a class="glightbox" href="../assets/setup/setup_09.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_09" src="../assets/setup/setup_09.jpg" /></a></p>
+</details>
+<details class="tip">
+<summary>Alternative: you can also launch VSCode in the web</summary>
+<p>💡 If you have not installed VSCode at your computer this is a (even more) straightforward way to go.</p>
+<ul>
+<li>👉 Go to your fork at <code>https://github.com/&lt;your_user&gt;/mlops-course</code></li>
+<li>👉 Click on <code>Code &gt; Create codespace on main</code></li>
+</ul>
+<p><a class="glightbox" href="../assets/setup/setup_03.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_03" src="../assets/setup/setup_03.jpg" /></a></p>
+<ul>
+<li>👉 Wait for the CodeSpace to launch</li>
+</ul>
+<p><a class="glightbox" href="../assets/setup/setup_04.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_04" src="../assets/setup/setup_04.jpg" /></a></p>
+<div class="admonition warning">
+<p class="admonition-title">Don't forget to stop your CodeSpace once you've finished!</p>
+<p>Remember that you "only" have 60 hours / month of free CodeSpaces. But <strong>no worries</strong> if you forget to do it, after a time of inactivity (if you closed the tab), the CodeSpace will <strong>automatically turn off</strong>. 👍</p>
+<p><a class="glightbox" href="../assets/setup/setup_06.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_06" src="../assets/setup/setup_06.jpg" /></a></p>
+</div>
+</details>
+<h3 id="3-open-mlflow">3. Open MLFlow</h3>
+<p>A <strong>MLFlow</strong> server should <strong>start automatically</strong> (thanks to the magic of Docker Compose) <strong>at <a href="http://localhost:5000/">http://localhost:5000/</a></strong>. If it did not started automatically (or if you launched VSCode on the web), then follow this instructions:</p>
+<ul>
+<li>👉 <strong>Click on</strong>: <code>Ports</code></li>
+<li>👉 <strong>Check</strong> there is a port 5000 open (if not add a port 5000)</li>
+<li>👉 <strong>Click on</strong>: <code>🌐</code></li>
+</ul>
+<p><a class="glightbox" href="../assets/setup/setup_05.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_05" src="../assets/setup/setup_05.jpg" /></a></p>
+<div class="admonition success">
+<p class="admonition-title">Congrats!</p>
+<p><strong>🎉 You are ready to go! 🎉</strong></p>
+</div>
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: 👋 MLOps Course Introduction" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              👋 MLOps Course Introduction
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../basics/" class="md-footer__link md-footer__link--next" aria-label="Next: What is MLFlow?" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              What is MLFlow?
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.annotate", "navigation.sections", "navigation.tabs", "navigation.prune", "navigation.indexes"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

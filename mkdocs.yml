@@ -1,4 +1,4 @@
-site_name: '🧪 MLOps Course'
+site_name: '🧪 The MLOps Cookbook'
 repo_url: https://github.com/Matesanz/mlops-course
 repo_name: Matesanz/mlops-course
 theme:
@@ -18,6 +18,7 @@ plugins:
   - search
   - autorefs
   - awesome-pages
+  - glightbox
   - mkdocstrings:
       handlers:
         python:
@@ -41,6 +42,7 @@ markdown_extensions:
 nav:
     - Getting Started:
       - index.md
+      - setup.md
     - MLFlow Basics:
       - basics/index.md
       - basics/1-connect_to_mlflow.ipynb
@@ -51,6 +53,8 @@ nav:
       - basics/6-logging_models.ipynb
       - basics/7-model_registry.ipynb
       - basics/8-model_staging.ipynb
+    - MLFLow Advanced:
+      - advanced/model_serving.md
     - Tutorials:
       - tutorials/index.md
       - tutorials/1-full_model_training.ipynb

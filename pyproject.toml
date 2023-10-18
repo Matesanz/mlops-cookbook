@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mlops-course"
-version = "0.5.0"
+version = "0.6.0"
 description = "Code for the MLOps Course: learning how to build, train, and deploy data models."
 authors = ["Andrés Matesanz <Matesanz.Cuadrado@gmail.com>"]
 readme = "README.md"
@@ -12,6 +12,7 @@ pydantic = "~1.10.4"
 scikit-learn = "~1.2.1"
 pandas = "~1.5.3"
 seaborn = "~0.12.2"
+flask = "^2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"
@@ -31,6 +32,7 @@ mkdocs-jupyter = "^0.22.0"
 pymdown-extensions = "^9.10"
 mkdocs-awesome-pages-plugin = "^2.9.2"
 mkdocs-section-index = "^0.3.8"
+mkdocs-glightbox = "^0.3.4"
 
 [tool.semantic_release]
 version_toml = "pyproject.toml:tool.poetry.version"

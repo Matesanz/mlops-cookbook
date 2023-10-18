@@ -32,6 +32,7 @@ mkdocs-jupyter = "^0.22.0"
 pymdown-extensions = "^9.10"
 mkdocs-awesome-pages-plugin = "^2.9.2"
 mkdocs-section-index = "^0.3.8"
+mkdocs-glightbox = "^0.3.4"
 
 [tool.semantic_release]
 version_toml = "pyproject.toml:tool.poetry.version"

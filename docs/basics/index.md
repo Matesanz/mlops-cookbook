@@ -4,4 +4,4 @@ Remember that **you are a scientist** (of data), and as a good scientist, you sh
 
 For example, imagine you are trying to develop a model that predicts the price of a house based on a series of parameters like the year of construction or the square footage. As a data scientist, your job is to research and experiment with different approaches to build an accurate model. This is very much like a writer working on their book.
 
-![mlflow_frontend](assets/mlflow_frontend.jpg)
+![mlflow_frontend](../assets/mlflow_frontend.jpg)

@@ -6,24 +6,6 @@ GREEN='\033[92m'
 BLUE='\033[94m'
 END='\033[0m'
 
-# configure git
-echo -e "${BLUE}🚀  Launching Devcontainer Post-Install Script${END}\n"
-echo -e "${BLUE}🔧  Configuring Git...${END}\n"
-git_config_file=".git_user_config"
-if [ ! -f "$git_config_file" ]; then
-    echo -e "${BLUE}ℹ️  It looks like this is the first time you run this script, please provide the following GIT information:${END}\n"
-    read -p "Git user name: " git_name
-    read -p "Git user email: " git_email
-    echo ${git_name} > ${git_config_file}
-    echo ${git_email} >> ${git_config_file}
-fi
-git_name=$(head -n 1 "$git_config_file")
-git_email=$(sed -n '2p' "$git_config_file")
-git config --global user.name "${git_name}"
-git config --global user.email "${git_email}"
-git config --global --add safe.directory $(pwd)
-echo -e "${GREEN}✅  Git Configured!${END}\n"
-
 # initialize pyenv
 echo -e "${BLUE}🔧  Initializing Pyenv...${END}\n"
 eval "$(pyenv init -)"

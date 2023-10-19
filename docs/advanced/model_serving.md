@@ -17,11 +17,11 @@ Serving a model using MLflow is a bit like setting up a **restaurant** (API) whe
 
     === "Regular Model Serving"
 
-        ![model_deployment_mlflow](assets/model_deployment_01.jpg)
+        ![model_deployment_mlflow](../../assets/model_deployment_01.jpg)
 
     === "Model Deployment as if it were a restaurant"
 
-        ![model_deployment_restaurant](assets/model_deployment_02.jpg)
+        ![model_deployment_restaurant](../../assets/model_deployment_02.jpg)
 
 Here's how it works:
 

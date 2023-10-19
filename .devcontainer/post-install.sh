@@ -39,8 +39,8 @@ echo -e "${BLUE}🔧  Installing python dependencies using Poetry..${END}\n"
 if [ ! -f "poetry.lock" ]; then
     echo -e "${BLUE}ℹ️  No poetry.lock file found, resolving dependencies, this may take a while, please wait..${END}\n"
 fi
+export POETRY_REQUESTS_TIMEOUT=1200  # increase timeout to avoid timeout errors
 poetry install --no-interaction --no-ansi --no-root
-pip3 install -e . --no-deps 
 echo -e "${GREEN}✅  Python dependencies installed!${END}\n"
 
 # install pre-commit hooks and start mkdocs

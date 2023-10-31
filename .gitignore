@@ -1,4 +1,5 @@
 # proyect-based folders
+data/
 mlartifacts/
 mlruns/
 

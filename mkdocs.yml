@@ -60,6 +60,12 @@ nav:
       - tutorials/index.md
       - tutorials/1-full_model_training.ipynb
       - tutorials/2-full_model_evaluation.ipynb
+    - Final Project:
+      - project/index.md
+      - project/virtual_environments.md
+      - project/poetry.md
+      - project/git.md
+
 
 watch:
   - docs

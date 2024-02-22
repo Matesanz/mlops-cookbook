@@ -53,17 +53,15 @@
     
     
    <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-        html.glightbox-open { overflow: initial; height: 100%; }
-        .gslide-title { margin-top: 0px; user-select: text; }
-        .gslide-desc { color: #666; user-select: text; }
-        .gslide-image img { background: white; }
-        
-            .gscrollbar-fixer { padding-right: 15px; }
-            .gdesc-inner { font-size: 0.75rem; }
-            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -242,6 +240,22 @@
     <li class="md-tabs__item">
       <a href="../../tutorials/" class="md-tabs__link">
         Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../exercises/" class="md-tabs__link">
+        Exercises
       </a>
     </li>
   
@@ -687,6 +701,86 @@
 
   
   
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../exercises/">Exercises</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Exercises" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Exercises
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercises/1-intro_to_mlflow_I/" class="md-nav__link">
+        ✍️ Exercise: Intro to MLFlow - Part I
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercises/2-intro_to_mlflow_II/" class="md-nav__link">
+        ✍️ Exercise: Intro to MLFlow - Part II
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -694,7 +788,7 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -716,14 +810,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../">Final Project</a>
           
-            <label for="__nav_5">
+            <label for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Final Project" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Final Project
         </label>
@@ -990,7 +1084,7 @@
 <li>Pull Changes from remote repository to local repository</li>
 <li>Remove Branch locally</li>
 </ol>
-<p><a class="glightbox" href="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*iL2J8k4ygQlg3xriKGimbQ.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="GIT Schema" src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*iL2J8k4ygQlg3xriKGimbQ.png" /></a></p>
+<p><a class="glightbox" href="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*iL2J8k4ygQlg3xriKGimbQ.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GIT Schema" src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*iL2J8k4ygQlg3xriKGimbQ.png" /></a></p>
 <h2 id="creating-a-git-repository">Creating a GIT Repository</h2>
 <p>A GIT repository is a place where you can store your project's code. Navigate to the directory where your project is located in the terminal and run the following command to initialize a new GIT repository:</p>
 <div class="admonition note">
@@ -1025,7 +1119,7 @@
 </div>
 <h2 id="working-with-branches">Working with Branches</h2>
 <p>Branches allow you to work on different features or parts of your project independently. </p>
-<p><a class="glightbox" href="https://wac-cdn.atlassian.com/dam/jcr:a905ddfd-973a-452a-a4ae-f1dd65430027/01%20Git%20branch.svg?cdnVersion=1288" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="git branch schema" src="https://wac-cdn.atlassian.com/dam/jcr:a905ddfd-973a-452a-a4ae-f1dd65430027/01%20Git%20branch.svg?cdnVersion=1288" /></a></p>
+<p><a class="glightbox" href="https://wac-cdn.atlassian.com/dam/jcr:a905ddfd-973a-452a-a4ae-f1dd65430027/01%20Git%20branch.svg?cdnVersion=1288" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="git branch schema" src="https://wac-cdn.atlassian.com/dam/jcr:a905ddfd-973a-452a-a4ae-f1dd65430027/01%20Git%20branch.svg?cdnVersion=1288" /></a></p>
 <div class="admonition note">
 <p class="admonition-title">Create a new branch</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>git<span class="w"> </span>branch<span class="w"> </span>&lt;new-branch-name&gt;

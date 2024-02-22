@@ -53,17 +53,15 @@
     
     
    <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-        html.glightbox-open { overflow: initial; height: 100%; }
-        .gslide-title { margin-top: 0px; user-select: text; }
-        .gslide-desc { color: #666; user-select: text; }
-        .gslide-image img { background: white; }
-        
-            .gscrollbar-fixer { padding-right: 15px; }
-            .gdesc-inner { font-size: 0.75rem; }
-            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -244,6 +242,22 @@
     <li class="md-tabs__item">
       <a href="../tutorials/" class="md-tabs__link">
         Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../exercises/" class="md-tabs__link">
+        Exercises
       </a>
     </li>
   
@@ -707,6 +721,86 @@
         
           
         
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../exercises/">Exercises</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Exercises" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Exercises
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/1-intro_to_mlflow_I/" class="md-nav__link">
+        ✍️ Exercise: Intro to MLFlow - Part I
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/2-intro_to_mlflow_II/" class="md-nav__link">
+        ✍️ Exercise: Intro to MLFlow - Part II
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
           
         
       
@@ -716,14 +810,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../project/">Final Project</a>
           
-            <label for="__nav_5">
+            <label for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Final Project" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Final Project
         </label>
@@ -799,6 +893,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install-mlflow" class="md-nav__link">
+    How to install MLFlow?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-launch-mlflow" class="md-nav__link">
+    How to launch MLFlow?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-mlflow-look-like" class="md-nav__link">
+    How does MLFlow look like?
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -823,7 +946,18 @@
 <h1 id="what-is-mlflow">What is MLFlow?</h1>
 <p>Remember that <strong>you are a scientist</strong> (of data), and as a good scientist, you should keep a record of all your experiments. Well, <strong>imagine MLflow as a book where you can jot down all your progress</strong>.</p>
 <p>For example, imagine you are trying to develop a model that predicts the price of a house based on a series of parameters like the year of construction or the square footage. As a data scientist, your job is to research and experiment with different approaches to build an accurate model. This is very much like a writer working on their book.</p>
-<p><a class="glightbox" href="../assets/mlflow_frontend.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="mlflow_frontend" src="../assets/mlflow_frontend.jpg" /></a></p>
+<h2 id="how-to-install-mlflow">How to install MLFlow?</h2>
+<p>Its really simple! 😃 You can install MLFlow with the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mlflow
+</code></pre></div>
+<h2 id="how-to-launch-mlflow">How to launch MLFlow?</h2>
+<p>Once you have installed MLFlow, you can launch it with the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mlflow<span class="w"> </span>ui
+</code></pre></div>
+<p>This will launch a server in your local machine. You can access it by going to <a href="http://localhost:5000">http://localhost:5000</a> in your web browser.</p>
+<h2 id="how-does-mlflow-look-like">How does MLFlow look like?</h2>
+<p><a class="glightbox" href="../assets/mlflow_frontend.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="mlflow_frontend" src="../assets/mlflow_frontend.jpg" /></a></p>
+<p>This is the frontend of MLFlow. It is a web application that allows you to keep track of your experiments. You can see the different experiments you have run, the parameters you have used, the metrics you have measured, and the artifacts you have generated.</p>
 
 
 

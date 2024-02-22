@@ -53,17 +53,15 @@
     
     
    <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-        html.glightbox-open { overflow: initial; height: 100%; }
-        .gslide-title { margin-top: 0px; user-select: text; }
-        .gslide-desc { color: #666; user-select: text; }
-        .gslide-image img { background: white; }
-        
-            .gscrollbar-fixer { padding-right: 15px; }
-            .gdesc-inner { font-size: 0.75rem; }
-            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
-            </style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -244,6 +242,22 @@
     <li class="md-tabs__item">
       <a href="../tutorials/" class="md-tabs__link">
         Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../exercises/" class="md-tabs__link">
+        Exercises
       </a>
     </li>
   
@@ -816,6 +830,86 @@
         
           
         
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../exercises/">Exercises</a>
+          
+            <label for="__nav_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Exercises" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Exercises
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/1-intro_to_mlflow_I/" class="md-nav__link">
+        ✍️ Exercise: Intro to MLFlow - Part I
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exercises/2-intro_to_mlflow_II/" class="md-nav__link">
+        ✍️ Exercise: Intro to MLFlow - Part II
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
           
         
       
@@ -825,14 +919,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../project/">Final Project</a>
           
-            <label for="__nav_5">
+            <label for="__nav_6">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="Final Project" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_6">
           <span class="md-nav__icon md-icon"></span>
           Final Project
         </label>
@@ -1032,7 +1126,7 @@
 <p class="admonition-title">Install the VSCode pluggin "Dev-Containers"</p>
 <p>In order to use DevContainers you need to have the VSCode pluggin <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers">Dev Containers</a>.</p>
 <p>You can do it <strong>manually</strong>:</p>
-<p><a class="glightbox" href="../assets/setup/setup_10.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_10" src="../assets/setup/setup_10.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_10.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_10" src="../assets/setup/setup_10.jpg" /></a></p>
 <p>Or by <strong>pressing</strong>:</p>
 <ol>
 <li>Press <code>Ctrl+P</code></li>
@@ -1056,7 +1150,7 @@
 </div>
 <h3 id="3-launch-the-devcontainer">3. Launch the Devcontainer</h3>
 <p><strong>Click on the bottom-right blue button <code>Reopen in Container</code></strong> <em>(wait, first time takes some time to run)</em>.</p>
-<p><a class="glightbox" href="https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="devcontainer_gif" src="https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif" /></a></p>
+<p><a class="glightbox" href="https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="devcontainer_gif" src="https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif" /></a></p>
 <h3 id="4-open-mlflow">4. Open MLFlow</h3>
 <p>A <strong>MLFlow</strong> server should <strong>start automatically</strong> (thanks to the magic of Docker Compose) <strong>at <a href="http://localhost:5000/">http://localhost:5000/</a></strong>. If it did not started automatically (or if you launched VSCode on the web), then follow this instructions:</p>
 <ul>
@@ -1064,14 +1158,14 @@
 <li>👉 <strong>Check</strong> there is a port 5000 open (if not add a port 5000)</li>
 <li>👉 <strong>Click on</strong>: <code>🌐</code></li>
 </ul>
-<p><a class="glightbox" href="../assets/setup/setup_05.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_05" src="../assets/setup/setup_05.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_05.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_05" src="../assets/setup/setup_05.jpg" /></a></p>
 <div class="admonition success">
 <p class="admonition-title">Congrats!</p>
 <p><strong>🎉 You are ready to go! 🎉</strong></p>
 </div>
 <h2 id="github-codespaces">Github Codespaces</h2>
 <p>GitHub Codespaces is like having a <strong>ready-to-use computer</strong> for writing and testing code, but it's all <strong>online</strong>. Imagine if your coding tools, like your text editor and programming languages, were available on the internet. With GitHub Codespaces, you can write and <strong>run your code in a web browser without needing to install everything on your personal computer</strong>. It's handy for collaborating with others and quickly starting coding projects, kind of like having your coding workspace in the cloud.</p>
-<p><a class="glightbox" href="../assets/setup/setup_01.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_01" src="../assets/setup/setup_01.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_01.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_01" src="../assets/setup/setup_01.jpg" /></a></p>
 <div class="admonition info">
 <p class="admonition-title">You need a Github Account</p>
 <p>In order to access to GitHub Codespaces you need to log in into your account or register if you have no account. Github provides <strong>60 hours</strong> of computing at CodeSpaces <strong>for free!</strong> 🤑</p>
@@ -1081,17 +1175,17 @@
 <li>👉 <strong>Go to</strong> the oficial repo at <a href="https://github.com/Matesanz/mlops-course">https://github.com/Matesanz/mlops-course</a></li>
 <li>👉 <strong>Click</strong> on <code>Fork &gt; Create a new Fork</code></li>
 </ul>
-<p><a class="glightbox" href="../assets/setup/setup_02.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_02" src="../assets/setup/setup_02.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_02.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_02" src="../assets/setup/setup_02.jpg" /></a></p>
 <h3 id="2-launch-a-codespace-in-vscode">2. Launch a CodeSpace in VSCode</h3>
 <ul>
 <li>👉 <strong>Go to</strong> your fork at <code>https://github.com/&lt;your_user&gt;/mlops-course</code></li>
 <li>👉 <strong>Click on</strong>: <code>&lt;&gt; Code</code> &gt; <code>Open in</code> &gt; <code>Open in Visual Studio Code</code></li>
 </ul>
-<p><a class="glightbox" href="../assets/setup/setup_07.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_07" src="../assets/setup/setup_07.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_07.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_07" src="../assets/setup/setup_07.jpg" /></a></p>
 <details class="warning">
 <summary>Accept all the pop-ups that appear</summary>
-<p><a class="glightbox" href="../assets/setup/setup_08.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_08" src="../assets/setup/setup_08.jpg" /></a>
-<a class="glightbox" href="../assets/setup/setup_09.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_09" src="../assets/setup/setup_09.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_08.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_08" src="../assets/setup/setup_08.jpg" /></a>
+<a class="glightbox" href="../assets/setup/setup_09.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_09" src="../assets/setup/setup_09.jpg" /></a></p>
 </details>
 <details class="tip">
 <summary>Alternative: you can also launch VSCode in the web</summary>
@@ -1100,15 +1194,15 @@
 <li>👉 Go to your fork at <code>https://github.com/&lt;your_user&gt;/mlops-course</code></li>
 <li>👉 Click on <code>Code &gt; Create codespace on main</code></li>
 </ul>
-<p><a class="glightbox" href="../assets/setup/setup_03.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_03" src="../assets/setup/setup_03.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_03.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_03" src="../assets/setup/setup_03.jpg" /></a></p>
 <ul>
 <li>👉 Wait for the CodeSpace to launch</li>
 </ul>
-<p><a class="glightbox" href="../assets/setup/setup_04.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_04" src="../assets/setup/setup_04.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_04.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_04" src="../assets/setup/setup_04.jpg" /></a></p>
 <div class="admonition warning">
 <p class="admonition-title">Don't forget to stop your CodeSpace once you've finished!</p>
 <p>Remember that you "only" have 60 hours / month of free CodeSpaces. But <strong>no worries</strong> if you forget to do it, after a time of inactivity (if you closed the tab), the CodeSpace will <strong>automatically turn off</strong>. 👍</p>
-<p><a class="glightbox" href="../assets/setup/setup_06.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_06" src="../assets/setup/setup_06.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_06.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_06" src="../assets/setup/setup_06.jpg" /></a></p>
 </div>
 </details>
 <h3 id="3-open-mlflow">3. Open MLFlow</h3>
@@ -1118,7 +1212,7 @@
 <li>👉 <strong>Check</strong> there is a port 5000 open (if not add a port 5000)</li>
 <li>👉 <strong>Click on</strong>: <code>🌐</code></li>
 </ul>
-<p><a class="glightbox" href="../assets/setup/setup_05.jpg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="setup_05" src="../assets/setup/setup_05.jpg" /></a></p>
+<p><a class="glightbox" href="../assets/setup/setup_05.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="setup_05" src="../assets/setup/setup_05.jpg" /></a></p>
 <div class="admonition success">
 <p class="admonition-title">Congrats!</p>
 <p><strong>🎉 You are ready to go! 🎉</strong></p>

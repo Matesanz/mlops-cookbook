@@ -7,12 +7,12 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
-mlflow-skinny = "~2.7.1"
 pydantic = "~1.10.4"
 scikit-learn = "~1.2.1"
 pandas = "~1.5.3"
 seaborn = "~0.12.2"
 flask = "^2"
+mlflow = "^2.10.2"
 
 [tool.poetry.group.dev.dependencies]
 black = "^22.8.0"

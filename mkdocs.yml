@@ -60,6 +60,10 @@ nav:
       - tutorials/index.md
       - tutorials/1-full_model_training.ipynb
       - tutorials/2-full_model_evaluation.ipynb
+    - Exercises:
+      - exercises/index.md
+      - exercises/1-intro_to_mlflow_I.ipynb
+      - exercises/2-intro_to_mlflow_II.ipynb
     - Final Project:
       - project/index.md
       - project/virtual_environments.md

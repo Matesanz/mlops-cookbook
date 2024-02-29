@@ -64,6 +64,7 @@ nav:
       - exercises/index.md
       - exercises/1-intro_to_mlflow_I.ipynb
       - exercises/2-intro_to_mlflow_II.ipynb
+      - exercises/3-intro_to_mlflow_III.ipynb
     - Final Project:
       - project/index.md
       - project/virtual_environments.md

@@ -56,6 +56,8 @@ nav:
       - basics/8-model_staging.ipynb
     - MLFLow Advanced:
       - advanced/model_serving.md
+      - advanced/whats_an_api.md
+      - advanced/calling_a_model_api.ipynb
     - Tutorials:
       - tutorials/index.md
       - tutorials/1-full_model_training.ipynb
@@ -65,6 +67,7 @@ nav:
       - exercises/1-intro_to_mlflow_I.ipynb
       - exercises/2-intro_to_mlflow_II.ipynb
       - exercises/3-intro_to_mlflow_III.ipynb
+      - exercises/4-intro_to_mlflow_IV.ipynb
     - Final Project:
       - project/index.md
       - project/virtual_environments.md

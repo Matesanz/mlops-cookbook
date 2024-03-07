@@ -587,6 +587,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_3">
@@ -654,6 +656,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#deploy-a-model-using-docker" class="md-nav__link">
+    Deploy a model using Docker
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -685,6 +694,20 @@
     <li class="md-nav__item">
       <a href="../calling_a_model_api/" class="md-nav__link">
         Call a Model API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intro_to_docker/" class="md-nav__link">
+        Introduction to Docker
       </a>
     </li>
   
@@ -805,6 +828,8 @@
         
           
         
+          
+        
       
       
         
@@ -877,6 +902,20 @@
     <li class="md-nav__item">
       <a href="../../exercises/4-intro_to_mlflow_IV/" class="md-nav__link">
         Exercise: Call a Model API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exercises/creating_a_docker_image/" class="md-nav__link">
+        Introduction to Docker - Part 2: Building Your Own Image
       </a>
     </li>
   
@@ -1021,6 +1060,13 @@
         <li class="md-nav__item">
   <a href="#deploy-a-model-using-mlflow" class="md-nav__link">
     Deploy a model using MLFLow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-a-model-using-docker" class="md-nav__link">
+    Deploy a model using Docker
   </a>
   
 </li>
@@ -1179,6 +1225,22 @@
 <p class="admonition-title">Change the timeout for serving requests</p>
 <p>By default the <strong>timeout</strong> is set to <strong>60 seconds</strong>, we can change it to <strong>10 seconds</strong> by:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>mlflow<span class="w"> </span>models<span class="w"> </span>serve<span class="w"> </span>--model-uri<span class="w"> </span>models:/&lt;model_name&gt;/&lt;model_stage&gt;<span class="w"> </span>--timeout<span class="w"> </span><span class="m">10</span>
+</code></pre></div>
+</div>
+<h2 id="deploy-a-model-using-docker">Deploy a model using Docker</h2>
+<p>Another way to deploy a model is using <strong>Docker</strong>. Docker is a platform for developing, shipping, and running applications using containerization. It allows you to package your application and its dependencies into a container that can run on any environment.</p>
+<p><a class="glightbox" href="../../assets/docker/docker_06.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="docker_06" src="../../assets/docker/docker_06.jpg" /></a></p>
+<div class="admonition tip">
+<p class="admonition-title">Deploy a MLFlow model with Docker</p>
+<p>You can deploy a MLFlow model with Docker using the following command:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>--net<span class="w"> </span>host<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>--env<span class="w"> </span><span class="nv">MLFLOW_TRACKING_URI</span><span class="o">=</span>http://localhost:5000<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>ghcr.io/mlflow/mlflow:v2.10.2<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>mlflow<span class="w"> </span>models<span class="w"> </span>serve<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>--model-uri<span class="w"> </span>models:/&lt;model_name&gt;/&lt;model_version&gt;<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>--port<span class="w"> </span><span class="m">5001</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>--env-manager<span class="w"> </span><span class="nb">local</span>
 </code></pre></div>
 </div>
 

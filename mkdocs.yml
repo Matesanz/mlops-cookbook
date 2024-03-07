@@ -58,6 +58,7 @@ nav:
       - advanced/model_serving.md
       - advanced/whats_an_api.md
       - advanced/calling_a_model_api.ipynb
+      - advanced/intro_to_docker.md
     - Tutorials:
       - tutorials/index.md
       - tutorials/1-full_model_training.ipynb
@@ -68,6 +69,7 @@ nav:
       - exercises/2-intro_to_mlflow_II.ipynb
       - exercises/3-intro_to_mlflow_III.ipynb
       - exercises/4-intro_to_mlflow_IV.ipynb
+      - exercises/creating_a_docker_image.md
     - Final Project:
       - project/index.md
       - project/virtual_environments.md

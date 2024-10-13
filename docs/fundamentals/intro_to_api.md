@@ -1,4 +1,4 @@
-# What's an API?
+# Introduction to APIs
 
 Imagine you're at a **restaurant** with a menu full of delicious dishes to choose from. You decide what you want and tell the waiter, who then goes to the kitchen to tell the chef exactly what to prepare for you. After a bit of wait, the waiter returns with your order exactly as you requested. In this scenario, think of the **menu** as a list of **services**, **you** as the **user**, the **waiter** as the **messenger**, and the **kitchen** as the system that prepares your **request**. This process is quite similar to how an API, or Application Programming Interface, works in the digital world.
 
@@ -130,7 +130,7 @@ Status codes are part of the API response and tell the client application whethe
 
 Together, these components allow APIs to function as effective intermediaries between different software systems, translating requests into actions and responses into data that can be understood and used by the client application. Understanding these parts can help developers more effectively utilize APIs in their projects.
 
-### Calling an API
+## Calling an API
 
 Calling an API using python is simple. You can use the `requests` library to send a request to an API endpoint and receive a response. Here's an example of how you can use the `requests` library to call an API:
 
@@ -142,7 +142,7 @@ endpoint = 'https://jsonplaceholder.typicode.com/todos/1'
 response = requests.get(endpoint)
 ```
 
-### Types of APIs
+## Types of APIs
 
 There are several types of APIs, including:
 
@@ -154,7 +154,7 @@ There are several types of APIs, including:
 
 - **Remote APIs**: These are used for communications between devices over a network.
 
-### Why are APIs Important?
+## Why are APIs Important?
 
 APIs are crucial because they enable the integration between different software systems, allowing them to work together. This can make it possible to:
 

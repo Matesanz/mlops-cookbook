@@ -101,7 +101,7 @@ These commands and parameters provide a foundation for building and running Dock
     You can run a MLFlow server with Docker using the following command:
 
     ```bash
-    docker run --network host ghcr.io/mlflow/mlflow:v2.10.2 mlflow ui
+    docker run --network host ghcr.io/mlflow/mlflow:v2.17.0 mlflow server
     ```
 
     Then go to `http://localhost:5000` to access the MLFlow server.
@@ -115,7 +115,7 @@ These commands and parameters provide a foundation for building and running Dock
     docker run \
     --net host \
     --env MLFLOW_TRACKING_URI=http://localhost:5000 \
-    ghcr.io/mlflow/mlflow:v2.10.2 \
+    ghcr.io/mlflow/mlflow:v2.17.0 \
     mlflow models serve \
     --model-uri models:/<model_name>/<model_version> \
     --port 5001 \

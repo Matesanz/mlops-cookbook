@@ -1,8 +1,8 @@
-# 👋 MLOps Course Repository
+# 👋 MLOps Cookbook Repository
 
-Official Repository of the **documentation of the MLOps Course** that I give at [Codespace Academy](https://codespaceacademy.com/?utm_source=google&utm_medium=paidsearch&utm_campaign=brand&utm_content=596335623775&utm_term=spain&gad=1&gclid=EAIaIQobChMI9OecheiAggMVwgkGAB3Wngp0EAAYASAAEgKwMfD_BwE) at the data science bootcamp.
+Official Repository of the **documentation of the MLOps Cookbook**. The module I teach at [Codespace Academy](https://codespaceacademy.com/?utm_source=google&utm_medium=paidsearch&utm_campaign=brand&utm_content=596335623775&utm_term=spain&gad=1&gclid=EAIaIQobChMI9OecheiAggMVwgkGAB3Wngp0EAAYASAAEgKwMfD_BwE) at the data science bootcamp.
 
-👉 You can find the documentation at [https://matesanz.github.io/mlops-course/](https://matesanz.github.io/mlops-course/)
+👉 You can find the documentation at [https://matesanz.github.io/mlops-cookbook/](https://matesanz.github.io/mlops-cookbook/)
 
 💙 On it you will find simple graphs to explain hard concepts!
 

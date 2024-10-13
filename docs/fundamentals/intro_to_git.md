@@ -1,4 +1,4 @@
-# Version Control using GIT
+# Introduction to GIT
 
 GIT is a powerful version control system that helps you track changes in your code and collaborate with others. This tutorial is aimed at beginners and will cover the basics of GIT.
 

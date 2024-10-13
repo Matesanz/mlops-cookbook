@@ -1,7 +1,7 @@
 site_name: '🧪 The MLOps Cookbook'
-repo_url: https://github.com/Matesanz/mlops-course
-repo_name: Matesanz/mlops-course
-site_url: https://matesanz.github.io/mlops-course/
+repo_url: https://github.com/Matesanz/mlops-cookbook
+repo_name: Matesanz/mlops-cookbook
+site_url: https://matesanz.github.io/mlops-cookbook/
 theme:
   name: material
   theme:
@@ -43,39 +43,49 @@ markdown_extensions:
 nav:
     - Getting Started:
       - index.md
-      - setup.md
-    - MLFlow Basics:
-      - basics/index.md
-      - basics/1-connect_to_mlflow.ipynb
-      - basics/2-creating_an_experiment.ipynb
-      - basics/3-creating_a_run.ipynb
-      - basics/4-logging_metrics.ipynb
-      - basics/5-logging_artifacts.ipynb
-      - basics/6-logging_models.ipynb
-      - basics/7-model_registry.ipynb
-      - basics/8-model_staging.ipynb
-    - MLFLow Advanced:
-      - advanced/model_serving.md
-      - advanced/whats_an_api.md
-      - advanced/calling_a_model_api.ipynb
-      - advanced/intro_to_docker.md
+      - about.md
+    - MLFlow:
+      - mlflow/index.md
+      - MLFlow Basics:
+        - mlflow/basics/1-connect_to_mlflow.ipynb
+        - mlflow/basics/2-creating_an_experiment.ipynb
+        - mlflow/basics/3-creating_a_run.ipynb
+      - Model Tracking:
+        - mlflow/tracking/4-logging_metrics.ipynb
+        - mlflow/tracking/5-logging_artifacts.ipynb
+        - mlflow/tracking/6-logging_models.ipynb
+        - mlflow/tracking/7-autologging.ipynb
+      - Model Registry:
+        - mlflow/registry/index.md
+        - mlflow/registry/8-register_model_ui.md
+        - mlflow/registry/8-register_model_api.ipynb
+        - mlflow/registry/9-tag_model_ui.md
+        - mlflow/registry/9-tag_model_api.ipynb
+      - Model Deployment:
+        - mlflow/deployment/index.md
+        - mlflow/deployment/10-deploy_model_locally.md
+        - mlflow/deployment/10-deploy_model_docker.md
+      - Model Invocation:
+        - mlflow/invocation/index.md
+        - mlflow/invocation/calling_a_model_api.ipynb
+    - Fundamentals:
+      - fundamentals/intro_to_git.md
+      - fundamentals/intro_to_api.md
+      - fundamentals/intro_to_virtual_environments.md
+      - fundamentals/intro_to_docker.md
+      - fundamentals/intro_to_poetry.md
     - Tutorials:
       - tutorials/index.md
-      - tutorials/1-full_model_training.ipynb
-      - tutorials/2-full_model_evaluation.ipynb
+      - tutorials/basic_model_tracking.ipynb
+      # - tutorials/1-full_model_training.ipynb
+      # - tutorials/2-full_model_evaluation.ipynb
     - Exercises:
       - exercises/index.md
       - exercises/1-intro_to_mlflow_I.ipynb
       - exercises/2-intro_to_mlflow_II.ipynb
       - exercises/3-intro_to_mlflow_III.ipynb
-      - exercises/4-intro_to_mlflow_IV.ipynb
-      - exercises/creating_a_docker_image.md
-    - Final Project:
-      - project/index.md
-      - project/virtual_environments.md
-      - project/poetry.md
-      - project/git.md
-
+      # - exercises/4-intro_to_mlflow_IV.ipynb
+      # - exercises/creating_a_docker_image.md
 
 watch:
   - docs

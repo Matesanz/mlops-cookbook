@@ -1,4 +1,4 @@
-# Dependency Management with Poetry
+# Introduction to Poetry
 
 [Poetry](https://python-poetry.org/) is an essential tool for Python developers as it **revolutionizes dependency management**, packaging, and project development. It simplifies the process of managing project dependencies by providing a declarative and intuitive approach. With Poetry: 
 

@@ -1,4 +1,4 @@
-# Creating the Virtual Environment
+# Introduction to Virtual Envs
 
 A virtual environment is an isolated environment in which you can **work on Python projects without interfering with the system-wide Python installation** or other projects. This is an **essential practice** for managing dependencies and ensuring project-specific package versions. This is especially useful if you are working on multiple projects at the same time, or if you want to test out new packages without affecting your system. Here's how to create a virtual environment in Python, Some of the most common tools to create virtualenvs are:
 

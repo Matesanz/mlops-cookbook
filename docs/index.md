@@ -1,16 +1,21 @@
-# 👋 MLOps Course Introduction
+# 🧪 The MLOps Cookbook
 
-Welcome to the **MLOps and MLflow course**! In this course, you will learn how to implement **best practices** of Machine Learning Operations (MLOps) using the open-source platform **MLflow**. MLOps is a set of practices and tools aimed at improving the collaboration and productivity of Machine Learning (ML) teams, as well as the reliability and reproducibility of ML models in production.
+Welcome to the **MLOps and MLFlow cookbook**! In this cookbook, you will learn how to implement **best practices** of Machine Learning Operations (MLOps) using the open-source platform **MLflow**. MLOps is a set of practices and tools aimed at improving the collaboration and productivity of Machine Learning (ML) teams, as well as the reliability and reproducibility of ML models in production.
 
-!!! info "What will I learn?"
+!!! question "What will I find in this cookbook?"
 
-    - Work with MLFlow: a tool used to record ML Experiments
-    - Upload a trained model to MLFlow
-    - Deploy a trained Model to an API
+    - How to launch a MLflow server
+    - How to create and manage MLflow projects
+    - How to train and log ML models using MLflow
+    - How to deploy ML models as an API
 
-Through this course, you will learn how to use MLflow to manage the **entire ML lifecycle**, from data preparation and **model training to deployment and monitoring**. You will also learn how to create and manage MLflow projects, models, and registry, as well as **how to deploy them as an API**.
+!!! info "Diclaimer"
 
-Whether you are a data scientist, machine learning engineer, or software developer, **this course will provide you with the knowledge and skills to implement MLOps** best practices and leverage the power of MLflow to streamline your ML workflow and improve the quality and reliability of your ML models.
+    This cookbook is a work in progress and it's mainly focused on the use of MLFlow. If you find any errors or have suggestions for improvement, please let me know by creating an issue on the [GitHub repository](https://github.com/Matesanz/mlops-cookbook).
+
+Through this cookbook, you will learn how to use MLflow to manage the **entire ML lifecycle**, from data preparation and **model training to deployment and monitoring**. You will also learn how to create and manage MLflow projects, models, and registry, as well as **how to deploy them as an API**.
+
+Whether you are a data scientist, machine learning engineer, or software developer, **this cookbook will provide you with the knowledge and skills to implement MLOps using MLFlow** best practices and leverage the power of MLflow to streamline your ML workflow and improve the quality and reliability of your ML models.
 
 ## What is MLOps?
 
@@ -23,11 +28,3 @@ In the world of machine learning, MLOps helps streamline the entire process, fro
 !!! note "MLOps simple analogy"
 
     MLOps is a bit like having a well-organized kitchen with all the tools and processes in place to turn a great recipe into a delicious meal.
-
-## 🙋 Author
-
-🙋 **Name**: Andrés Matesanz
-
-📩 **Email**: Matesanz.Cuadrado@gmail.com
-
-🌐 **Website**: [https://matesanz.github.io/](https://matesanz.github.io/)

@@ -1,143 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://matesanz.github.io/mlops-course/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/setup/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/about/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/advanced/calling_a_model_api/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/setup/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/advanced/intro_to_docker/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/exercises/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/advanced/model_serving/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/exercises/1-intro_to_mlflow_I/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/advanced/whats_an_api/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/exercises/2-intro_to_mlflow_II/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/exercises/3-intro_to_mlflow_III/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/1-connect_to_mlflow/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/exercises/4-intro_to_mlflow_IV/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/2-creating_an_experiment/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/exercises/creating_a_docker_image/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/3-creating_a_run/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/fundamentals/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/4-logging_metrics/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/fundamentals/intro_to_api/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/5-logging_artifacts/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/fundamentals/intro_to_docker/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/6-logging_models/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/fundamentals/intro_to_git/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/7-model_registry/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/fundamentals/intro_to_poetry/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/basics/8-model_staging/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/fundamentals/intro_to_virtual_environments/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/exercises/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/exercises/1-intro_to_mlflow_I/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/basics/1-connect_to_mlflow/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/exercises/2-intro_to_mlflow_II/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/basics/2-creating_an_experiment/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/exercises/3-intro_to_mlflow_III/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/basics/3-creating_a_run/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/exercises/4-intro_to_mlflow_IV/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/deployment/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/exercises/creating_a_docker_image/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/deployment/10-deploy_model_docker/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/project/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/deployment/10-deploy_model_locally/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/project/git/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/invocation/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/project/poetry/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/invocation/calling_a_model_api/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/project/virtual_environments/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/registry/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/tutorials/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/registry/8-model_registry/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/tutorials/1-full_model_training/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/registry/8-register_model_api/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
-         <loc>https://matesanz.github.io/mlops-course/tutorials/2-full_model_evaluation/</loc>
-         <lastmod>2024-03-07</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/registry/8-register_model_ui/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/registry/9-tag_model_api/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/registry/9-tag_model_ui/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/tracking/4-logging_metrics/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/tracking/5-logging_artifacts/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/tracking/6-logging_models/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/mlflow/tracking/7-autologging/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/tutorials/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/tutorials/1-full_model_training/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/tutorials/2-full_model_evaluation/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://matesanz.github.io/mlops-cookbook/tutorials/basic_model_tracking/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
 </urlset>

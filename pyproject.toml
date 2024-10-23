@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mlops-cookbook"
-version = "0.9.0"
+version = "0.9.1"
 description = "Code for the MLOps Cookbook: learning how to build, train, and deploy data models using MLFlow."
 authors = ["Andrés Matesanz <Matesanz.Cuadrado@gmail.com>"]
 readme = "README.md"

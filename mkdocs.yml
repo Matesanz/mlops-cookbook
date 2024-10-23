@@ -54,6 +54,8 @@ nav:
         - mlflow/tracking/4-logging_metrics.ipynb
         - mlflow/tracking/5-logging_artifacts.ipynb
         - mlflow/tracking/6-logging_models.ipynb
+        - mlflow/tracking/8-logging_signature.ipynb
+        - mlflow/tracking/9-logging_datasets.ipynb
         - mlflow/tracking/7-autologging.ipynb
       - Model Registry:
         - mlflow/registry/index.md
